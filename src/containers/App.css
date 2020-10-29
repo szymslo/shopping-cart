@@ -1,0 +1,211 @@
+:root {
+    --maincolor:  rgba(95, 95, 95, 0.8);
+    --secondarycolor: rgb(230, 230, 230);
+    --backgroundcolor: rgba(224, 221, 212, 0.5);
+    --bordercolor: rgba(184, 184, 184, 0.9);
+    --totalbackground:  rgba(250, 250, 250, 0.9);
+}
+
+#title {
+    color: var(--maincolor);
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+#empty {
+    min-width: 125px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.headerbutton {
+    color: var(--secondarycolor);
+    background-color: black;
+    border: none;
+    font-weight: 200;
+    font-size: 1rem;
+    border-radius: 2px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.totalsbutton {
+    color: var(--secondarycolor);
+    background-color: black;
+    border: none;
+    font-weight: 800;
+    font-size: 1rem;
+    border-radius: 2px;
+    min-width: 200px;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+    padding: .8rem 2rem .8rem 2rem;
+}
+
+.productsbutton {
+    color: var(--secondarycolor);
+    background-color: black;
+    border: none;
+    font-weight: 800;
+    font-size: 1rem;
+    border-radius: 2px;
+    margin-top: .5rem;
+    margin-bottom: 1.5rem;
+    padding: .4rem 1rem .4rem 1rem;
+}
+
+.iconbutton {
+    outline: none;
+    border: none;
+    background: white;
+}
+
+.counterbutton {
+    border: 1px solid var(--bordercolor);
+    height: 27px;
+    width: 27px;
+    outline: none;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.shipping {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--backgroundcolor);
+    border: 1px solid var(--bordercolor);
+    min-width: 200px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-weight: 900;
+    font-size: 0.8rem;
+}
+
+.totals {
+    background-color: var(--backgroundcolor);
+    border: 1px solid var(--bordercolor);
+    min-width: 200px;
+    margin-top: 1rem;
+    font-weight: 900;
+    font-size: 0.8rem;
+}
+
+.total {
+    border-bottom: 1px solid var(--bordercolor);
+    min-width: 200px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.subtotals {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: var(--totalbackground);
+}
+
+.subtotal {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--bordercolor);
+    min-width: 200px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    font-weight: 900;
+    font-size: 0.8rem;
+}
+
+.grandtotal {
+    display: flex;
+    justify-content: space-between;
+    min-width: 200px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-weight: 900;
+    font-size: 0.8rem;
+}
+
+.ptot {
+    color: var(--maincolor);  
+}
+
+.gtot {
+    font-weight: 900;
+    font-size: 1.1rem;
+    margin-top: .7rem;
+}
+
+.divbuttontotals {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divbuttonproduct {
+    display:      block;
+    margin-left:  auto;
+    margin-right: 1rem;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 2px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    flex-grow: 2;
+    min-width: 500px;
+    margin-right: 2rem;
+}
+
+.image {
+    margin-left:20px;
+}
+
+.pheader {
+    display: flex;
+    justify-content: space-around;
+    margin: 1.5rem 3rem 1rem 3rem;
+    align-items: center;
+    color: var(--maincolor);  
+    font-weight: 900;
+    font-size: .9rem;
+    border-bottom: 1px solid var(--bordercolor);  
+}
+
+.pdetail {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+    align-items: center;
+    color: var(--maincolor);  
+    font-weight: 100;
+    border-bottom: 1px solid var(--bordercolor);  
+}
+
+.product {
+    display: flex;
+    align-items: center;
+}
+
+.itemcount {
+    border: 1px solid var(--bordercolor);  
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    line-height: 25px;
+}
+
+

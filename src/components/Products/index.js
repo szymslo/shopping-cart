@@ -58,11 +58,14 @@ const Products = () => {
       <div className="divbuttonproduct">
         <button
           className="productsbutton"
-          onClick={() =>
-            globalDispatch({ type: "UPDATE_AMOUNT", payload: amount })
-          }
+          onClick={() => {
+            if (globalState.isProductVisible) {
+              globalDispatch({ type: "UPDATE_AMOUNT", payload: amount });
+            } 
+            else alert("No products selected!");
+          }}
         >
-          Update Shopping Cart
+        Update Shopping Cart
         </button>
       </div>
     </div>

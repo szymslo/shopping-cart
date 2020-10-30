@@ -6,6 +6,7 @@ const reducer = (state, action) => {
             return {
                 ...state, 
                 finalamount: action.payload,
+                isCartVisible: true
             };
         case "HIDE_PRODUCT":
             return {
@@ -13,6 +14,11 @@ const reducer = (state, action) => {
                 finalamount: 0,
                 isProductVisible: false
             };
+        case "CHECKOUT":
+                return {
+                ...state, 
+                isCartVisible: false
+                };
         default:
             return state;
     }
@@ -21,7 +27,8 @@ const reducer = (state, action) => {
 const useGlobalState = () => {
     const [globalState, globalDispatch] = useReducer(reducer, {
         finalamount: 0,
-        isProductVisible: true
+        isProductVisible: true,
+        isCartVisible: true
     })
     return {globalState, globalDispatch}
 };

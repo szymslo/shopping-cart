@@ -7,10 +7,14 @@ import GlobalStateProvider from '../store/GlobalStateProvider';
 function App() {
   return (
     <GlobalStateProvider>
-      <Header/>
-      <div className="container">
-        <Products/>
-        <Summary/>
+      <div class="out">
+        <div className="wrapper">
+          <Header/>
+          <div className="container">
+            <Products/>
+            <Summary/>
+          </div>
+        </div>
       </div>
     </GlobalStateProvider>
   );

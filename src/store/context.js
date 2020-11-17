@@ -1,5 +1,5 @@
 import {createContext} from "react";
 
-const CarContext = createContext({});
+const GlobalContext = createContext({});
 
-export default CarContext;
+export default GlobalContext;
